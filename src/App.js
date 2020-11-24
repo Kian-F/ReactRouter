@@ -1,10 +1,14 @@
-import './App.css';
-import Route from 'react-router-dom'
-
+import React from 'react';
+import Nav from "./Nav";
+import Shop from "./Shop"
+import About from "./About"
 function App() {
   return (
     <div className="App">
-      <h3>Hi</h3>
+      <Nav/>
+      <Shop/>
+      <About/>
+
     </div>
   );
 }
