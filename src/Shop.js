@@ -15,14 +15,16 @@ function Shop() {
   return (
     <div>
       <h3>Shop</h3>
+      <div className="products">
       {products.map((product) => (
         <ul>
           <h3 key={product.id}>{product.title}</h3>
-      <h4>{product.category}</h4>
+          <h4>{product.category}</h4>
           <img src={product.image}></img>
-          <li>{}</li>
+          
         </ul>
       ))}
+      </div>
     </div>
   );
 }

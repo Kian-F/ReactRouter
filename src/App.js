@@ -5,25 +5,20 @@ import About from "./About";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
-    
-      <Router>
-        <div>
+    <Router>
+      <div>
         <Nav />
         <Switch>
-        <Route path='/' exact component={Home}/>
-        <Route path="/shop" component={Shop} />
-        <Route path='/About' component={About}/>
+          <Route path="/" exact component={Home} />
+          <Route path="/shop" component={Shop} />
+          <Route path="/About" component={About} />
         </Switch>
-        </div>
-      </Router>
-      
-    
+      </div>
+    </Router>
   );
 }
 
-const Home=()=>{
-return(
-  <h3>Home</h3>
-)
-}
+const Home = () => {
+  return <h3>Home</h3>;
+};
 export default App;
