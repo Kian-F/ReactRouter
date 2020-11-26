@@ -21,4 +21,6 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  min-height: 10vh;
+  background: cornflowerblue;
 }
