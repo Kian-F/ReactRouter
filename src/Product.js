@@ -14,7 +14,7 @@ const fetchProduct = async ()=>{
     setProduct(product)
 }
 return(
-  <div>
+  <div className="product">
 <h3>{product.title}</h3>
 <img src={product.image}></img>
 </div>)
