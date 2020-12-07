@@ -34,31 +34,26 @@ function Shop() {
     setProducts(products);
   };
   return (
-    
-        <div className='product'>
-        <card>
-          {products.map((product) => (
-            <CardActionArea>
-              <CardMedia className={classes.media} image={product.image} />
-              <CardContent>
-                <Typography
-                  key={product.id}
-                  gutterBottom
-                  variant="h5"
-                  component="h2"
-                >
-                  <Link to={`/shop/${product.id}`}>{product.title}</Link>
-                </Typography>
-                <Typography>{product.category}</Typography>
-              </CardContent>
-            </CardActionArea>
-          ))}
-      
-
-        </card>
-       
-        </div>
-   
+    <div className="products">
+      <card>
+        {products.map((product) => (
+          <CardActionArea>
+            <CardMedia className={classes.media} image={product.image} />
+            <CardContent>
+              <Typography
+                key={product.id}
+                gutterBottom
+                variant="h5"
+                component="h2"
+              >
+                <Link to={`/shop/${product.id}`}>{product.title}</Link>
+              </Typography>
+              <Typography>{product.category}</Typography>
+            </CardContent>
+          </CardActionArea>
+        ))}
+      </card>
+    </div>
   );
 }
 
