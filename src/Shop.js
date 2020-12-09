@@ -34,10 +34,10 @@ function Shop() {
     setProducts(products);
   };
   return (
-    <div className="products">
-      <card>
+    <div className="container">
+      <card >
         {products.map((product) => (
-          <CardActionArea>
+          <CardActionArea className="products">
             <CardMedia className={classes.media} image={product.image} />
             <CardContent>
               <Typography
@@ -52,8 +52,9 @@ function Shop() {
             </CardContent>
           </CardActionArea>
         ))}
-      </card>
-    </div>
+      </card> 
+      </div>
+    
   );
 }
 
